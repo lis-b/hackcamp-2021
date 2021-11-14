@@ -1,0 +1,48 @@
+/* how do i align right again ;u;*/
+.NavbarItems {
+  background: #F2F0EB;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-left: auto;
+  margin-right: 0;
+  opacity: 0.5;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-logo {
+  color: #041121;
+  justify_self: start;
+  margin_left: 20px;
+  cursor: pointer;
+}
+
+.siteName {
+  margin-left: 0.2rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-conten: end;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #041121;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: gray;
+  border-radius: 8px;
+  transition: all 0.2s ease-out;
+}

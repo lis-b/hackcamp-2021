@@ -4,10 +4,7 @@ import { Link } from "wouter";
 // Our language strings for the header
 const strings = [
   "Hello React",
-  "Salut React",
-  "Hola React",
-  "안녕 React",
-  "Hej React"
+  "Salut React"
 ];
 
 // Utility function to choose a random value from the language array
@@ -66,8 +63,7 @@ export default function Home() {
         <p>
           This is the Glitch <strong>Hello React</strong> project. You can use
           it to build your own app. See more info in the{" "}
-          <Link href="/about">About</Link> page, and check out README.md in the
-          editor for additional detail plus next steps you can take!
+          <Link href="/about">About</Link> 
         </p>
       </div>
     </>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import { Router, Link } from "wouter";
 
 /**
@@ -12,42 +12,66 @@ import { Router, Link } from "wouter";
 */
 
 // Import and apply CSS stylesheet
-import "./styles/styles.scss";
+import "./styles/style.sass";
+import "./styles/OpenDyslexic.sass";
+import "normalize.css"
 
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
 import useHashLocation from "./hooks/wouter-hash";
+import Navbar from "./components/Navbar/Navbar.jsx";
 
 // The component that adds our Meta tags to the page
 import Seo from './components/seo.jsx';
 
-// Home function that is reflected across the site
-export default function Home() {
-  return (
-    <Router hook={useHashLocation}>
-      <Seo />
-      <main role="main" className="wrapper">
-        <div className="content">
-          {/* Router specifies which component to insert here as the main content */}
-          <PageRouter />
+class App extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.handleFontChange = this.handleFontChange.bind(this);
+    this.handleFakeAccount = this.handleFakeAccount.bind(this);
+    
+    this.state = {
+      dyslexiaMode: false,
+      isSignedIn: false,
+    }
+  }
+  
+  handleFontChange(event) {
+    const { dyslexiaMode } = this.state;
+    
+    this.setState({dyslexiaMode: !dyslexiaMode});
+  }
+  
+  handleFakeAccount() {
+    this.setState({isSignedIn: true});
+  }
+  
+  render() {
+    const { dyslexiaMode, isSignedIn } = this.state;
+    var font = dyslexiaMode ? {fontFamily: "OpenDyslexic"} : {fontFamily: "Verdana, sans-serif"};
+    
+    return (
+      <Router hook={useHashLocation}>
+        <Seo />
+        <div 
+          className="wrapper"
+          style={font} >
+          <div className="header">
+            <Navbar isSignedIn={isSignedIn} />
+          </div>
+          <div className="content">
+            {/* Router specifies which component to insert here as the main content */}
+            <PageRouter 
+              {...this.state}
+              handleFontChange={this.handleFontChange}
+              handleFakeAccount={this.handleFakeAccount}
+            />
+          </div>
         </div>
-      </main>
-      {/* Footer links to Home and About, Link elements matched in router.jsx */}
-      <footer className="footer">
-        <div className="links">
-          <Link href="/">Home</Link>
-          <span className="divider">|</span>
-          <Link href="/about">About</Link>
-        </div>
-        <a
-          className="btn--remix"
-          target="_top"
-          href="https://glitch.com/edit/#!/remix/glitch-hello-react"
-        >
-          <img src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140" alt="" />
-          Remix on Glitch
-        </a>
-      </footer>
-    </Router>
-  );
+      </Router>
+    );
+  }
 }
+
+export default App;

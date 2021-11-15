@@ -9,7 +9,7 @@
   color: #041121;
   border-bottom: 2px solid #ccc;
   active-color: #041121;
-
+  
   .navbar-logo {
     cursor: pointer;
     font-size: 2rem;
@@ -28,8 +28,9 @@
     grid-gap: 10px;
     list-style: none;
     text-align: right;
-    width: 25vw;
-    justify-conten: end;
+    width: auto;
+    display: flex;
+    gap: 30px;
     margin-right: 2rem;
     justify-content: space-between;
     position: absolute;
@@ -67,6 +68,10 @@
     position: relative;
     display: inline-block;
   }
+  
+  .logbtn {
+    border-radius: 16px;
+  }
 
   .dropdown-content {
     display: none;
@@ -75,6 +80,12 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-out;
   }
 
   .dropdown-content a {
@@ -82,15 +93,17 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    transition: all 0.2s ease-out;
   }
 
-  .login:hover .dropdown-content {
+  .login:hover .dropdown-content,
+  .login:focus .dropdown-content {
     display: block;
+    opacity: 1;
   }
 
   .login:hover .logbtn {
     background-color: #cfcdc8;
-    border-radius: 16px;
     transition: all 0.2s ease-out;
   }
 

@@ -25,10 +25,10 @@ class ImageCard extends React.Component {
 
 ImageCard.defaultProps = {
   username: "Anonymous",
-  avatar: "https://place-hold.it/24x24?text=A",
-  image: "https://place-hold.it/380x256",
+  avatar: "https://place-hold.it/24x24?text=",
+  image: "https://place-hold.it/380x290?text=",
   imageAlt: "",
-  description: "Description Text - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nascetur tristique enim, nulla turpis. Nibh quis dolor nibh leo justo, non risus purus sit."
+  description: "Description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nascetur tristique enim, nulla turpis. Nibh quis dolor nibh leo justo, non risus purus sit."
 };
 
 export default ImageCard;

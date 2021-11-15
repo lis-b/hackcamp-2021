@@ -23,7 +23,7 @@ class Navbar extends React.Component {
             )
           })}
            <div className = "login">
-             <button className = "logbtn"> Log In
+             <button className = "logbtn">Account
              <div className = "dropdown-content">
                   <a href="#/login">Log In</a>
                   <a href="#/signup">Register</a>             

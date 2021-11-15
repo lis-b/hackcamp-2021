@@ -41,8 +41,8 @@ class Movement extends React.Component {
 }
 
 Movement.defaultProps = {
-  name: "Climate Action",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere ullamcorper id aliquet eget gravida. Molestie ultrices convallis sit sed vitae. Quisque vel sit ut egestas lectus cras in viverra. Tortor nunc orci nam tempus porttitor ipsum, tellus ac.",
+  name: "Sample Movement",
+  description: "This is a placeholder sample page for movements. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere ullamcorper id aliquet eget gravida. Molestie ultrices convallis sit sed vitae. Quisque vel sit ut egestas lectus cras in viverra. Tortor nunc orci nam tempus porttitor ipsum, tellus ac.",
   cards: SampleMovementCards
 };
 

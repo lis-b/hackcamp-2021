@@ -47,7 +47,7 @@ class App extends Component {
       <Router hook={useHashLocation}>
         <Seo />
         <div 
-          className="wrapper"
+          className="main-wrapper"
           style={font} >
           <div className="header">
             <Navbar isSignedIn={isSignedIn} />

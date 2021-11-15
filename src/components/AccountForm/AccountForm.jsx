@@ -18,7 +18,7 @@ class AccountForm extends React.Component {
         </Form.Group>
         
         <Button type="button" onClick={handler}>
-          {isLogin ? "Login" : "Register"}
+          {isLogin ? "Log In" : "Register"}
         </Button>
       </Form>
     );

@@ -1,36 +1,70 @@
 import * as React from "react";
-/* ADD IMPORTS FROM TODO ON THE NEXT LINE */
+import './about.scss';
+import Container from 'react-bootstrap/Container';
 
-
-/**
-* The About function defines the component that makes up the About page
-* This component is attached to the /about path in router.jsx
-*/
-
-export default function About() {
-  /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
-  
-  return (
-    <div className="page">
-      {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}
-      <h1 className="title">
-        About Us
-      </h1>
-      {/* REPLACE OPENING P TAG BELOW WITH CODE FROM TODO */}
-      <h2 className="p1title">
-        The Project
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce consequat fringilla urna auctor porta.
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-        per inceptos himenaeos. Ut consectetur, risus sed elementum pulvinar,
-        odio odio pharetra nibh, sollicitudin dapibus orci est at purus.
-      </p>
-      <h2 className="teamdesc">
-        Meet the Team
-      </h2>
- 
-    </div>
-  );
+class About extends React.Component {
+  render() {
+    return (
+      
+      
+      <div className="about-wrapper"> 
+        <h1 className="title">
+          About Us
+        </h1>
+        <div className="project-container">
+          <div className="left">
+           <img id="webpage" src= "https://cdn.glitch.me/52e811a4-976d-4bda-8793-736a0ce70fdd%2FBrazuca%20Screen%201.png?v=1636946515595" />
+          </div>
+          
+       <div className="right">
+          <h2 className="p1title">
+          Our Project
+        </h2>
+        <p>
+          Activism on Board aims to connect people to a global array of organizations actively working towards social change. Learn about a social movement or an organization by browsing the explore page. This project was made by Team Capybara for Hack Camp 2021.
+        </p>
+          </div>
+        </div>
+        
+        <h2 className="teamdesc">
+          Our Team
+        </h2>
+        
+        <div className = "team-members">
+        <p>
+          <h3>Lisa </h3> 
+          <br />
+          Social Movement they're following: All of them!
+          <br />
+        </p>
+        </div>
+        <div className = "team-members">
+        <p>
+          <h3>Ruby </h3>
+          <br />
+          Social Movement they're following: All of them!
+          <br />
+        </p>
+        </div>
+        <div className = "team-members">
+        <p>
+          <h3>Linda </h3>
+          <br />
+          Social Movement they're following: All of them!
+          <br />
+        </p>
+        </div>
+        <div className = "team-members">
+        <p>
+          <h3>Naia </h3>
+          <br />
+          Social Movement they're following: All of them!
+          <br />
+        </p>
+        </div>
+      </div>
+    );
+  }
 }
+
+export default About;

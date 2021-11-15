@@ -7,7 +7,7 @@ class Login extends React.Component {
     
     return (
       <AccountFormPage
-        pageTitle="Login To Your Account"
+        pageTitle="Log In To Your Account"
         handler={handleFakeAccount}
         isLogin={true}
         pageText="New To Activism On Board?"

@@ -14,12 +14,16 @@ class Home extends React.Component {
         </div>
         <div id="home-buttons">
           <Link to="/login">
-            <button type="button">Log In</button>
+            <button className="button">Log In</button>
           </Link>
             <Link to="/signup">
-            <button type="button">Register</button>
-          </Link>
+            <button className="button">Register</button>
+          </Link>    
         </div>
+
+        <img id="leftcapy" src= "https://cdn.glitch.me/52e811a4-976d-4bda-8793-736a0ce70fdd%2Fcapy%20login.png?v=1636936236205" />
+        <img id = "midcapy" src= "https://cdn.glitch.me/52e811a4-976d-4bda-8793-736a0ce70fdd%2Fcapy%20bath.png?v=1636937230961" />        
+        <img id = "homecapy" src="https://cdn.glitch.me/52e811a4-976d-4bda-8793-736a0ce70fdd%2Fcapy%20home.png?v=1636936214127"/>
       </div>
     );
   }

@@ -10,7 +10,7 @@ class Login extends React.Component {
         pageTitle="Login To Your Account"
         handler={handleFakeAccount}
         isLogin={true}
-        pageText="New To Placeholder?"
+        pageText="New To Activism On Board?"
         pageLinkText="Create Your Account"
       />
     );

@@ -1,0 +1,54 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: #F2F0EB;
+  background-image: url('https://cdn.glitch.me/52e811a4-976d-4bda-8793-736a0ce70fdd%2Fcapy%20home.png?v=1636936214127');
+  background-size:100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin: auto;
+  text-align: center;
+}
+
+.main-container { 
+  opacity: 1;
+  animation: fadeIn 1.5s ease;
+}
+
+#welcome-text {
+  font-size: 500%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#welcome-sub {
+  font-size: 200%;
+  text-align: center;
+}
+
+#home-buttons button:hover {
+  background-color: #5398BE;
+  color: #FFF;
+}
+
+#home-buttons {
+
+  width: 300px;
+  text-align: center;
+  left: 150px;
+  margin-top: 50px;
+}
+
+#home-buttons button {
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  background-color: #FFA552;
+  cursor: pointer;
+  font-size: 50px;
+  padding: 7px;
+  width: 300px;
+  display: block;
+  margin-bottom: 20px;
+  transition-duration: 0.4s;
+}

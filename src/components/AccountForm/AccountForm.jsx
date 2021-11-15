@@ -17,8 +17,8 @@ class AccountForm extends React.Component {
           <Form.Control type="password" placeholder="password" />
         </Form.Group>
         
-        <Button type="submit" onClick={handler}>
-          {isLogin ? "Login" : "Signup"}
+        <Button type="button" onClick={handler}>
+          {isLogin ? "Login" : "Register"}
         </Button>
       </Form>
     );

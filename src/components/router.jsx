@@ -5,6 +5,8 @@ import About from "../pages/about";
 import Settings from "../pages/settings";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
+import Signout from "../pages/signout";
+import SampleMovement from "../pages/samplemovement";
 
 /**
 * The router is imported in app.jsx
@@ -16,12 +18,17 @@ import Signup from "../pages/signup";
 
 class PageRouter extends React.Component {
   render() {
-    const { dyslexiaMode, handleFontChange, handleFakeAccount } = this.props;
+    const { dyslexiaMode, 
+            handleFontChange, 
+            handleFakeAccount, 
+            signout } 
+            = this.props;
     
     return (
      <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/samplemovement" component={SampleMovement} />
         
       <Route path="/settings">
         <Settings 
@@ -37,10 +44,16 @@ class PageRouter extends React.Component {
       </Route>
         
       <Route path="/signup">
-      <Signup 
+        <Signup 
         handleFakeAccount={handleFakeAccount}
       />  
-    </Route>
+      </Route>
+        
+      <Route path="/signout">
+        <Signout 
+        signout={signout}
+      />  
+      </Route>
     </Switch>
      );
   }

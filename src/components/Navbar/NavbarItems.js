@@ -1,17 +1,12 @@
 export const NavbarItems = [
   {
-    title: 'Home',
-    url: '#',
-    className: 'nav-links'
-  }, 
-  {
     title: 'Explore',
-    url: '#',
+    url: '/explore',
     className: 'nav-links'
   },
   {
     title: 'About Us',
-    url: '#',
+    url: '/about',
     className: 'nav-links'
   }
 ]

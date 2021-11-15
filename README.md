@@ -1,6 +1,6 @@
 # Welcome To Activism On Board
 
-Our project **_Activism On Board_** features a online community platform for exploring social activism and movements. 
+Our project **_Activism On Board_** features an online community platform for exploring social activism and movements. It is currently a prototyped demo. ☺️
 
 At **_Activism On Board_**, we've made it easy and accessible to get involved in something you care about.
 Users can explore current events through a few clicks, and gain insight on the latest movements.
@@ -22,10 +22,10 @@ Users can explore current events through a few clicks, and gain insight on the l
 Tumblr, Twitter, Pinterest, Savee.it
 
 ## What it does
-Movements 
+Shows people current activism movements
 
 ## How we built it
-Figma, React, React-Bootstrap, Wrouter
+Figma, React, React-Bootstrap, Wouter
 
 ## Challenges we ran into
 - setting up sass to work with glitch
@@ -37,7 +37,7 @@ Figma, React, React-Bootstrap, Wrouter
 - Making the adorable capybara images (Thanks to Ruby!)
 
 ## What we learned
-- We learned how to use React, Read and edit prototypes as a team on Figma, Export the code to GitHub, and use Wrouter
+- We learned how to use React, Read and edit prototypes as a team on Figma, Export the code to GitHub, and use Wouter
 - it takes a lot of effort and research to create a website that's truly accessible for all, but doing so can make a user's life easier
 (which makes it worth it)
 

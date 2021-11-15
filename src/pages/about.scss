@@ -6,7 +6,7 @@
 
 .project-container {
   display: flex;
-  width:50vw;
+  width:70vw;
   margin:auto;
   margin-top: 5%;
   .right {
@@ -30,4 +30,16 @@
   width: 300px;
   height: 150px;
   background: #ffffff;
+  margin:10px;
+}
+
+.teamdesc {
+   margin-top: 5%;
+  display:flex;
+  justify-content:center;
+}
+
+.team-grid {
+  display:flex;
+  justify-content:center;
 }

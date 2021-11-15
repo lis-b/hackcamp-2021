@@ -29,7 +29,7 @@ class About extends React.Component {
         <h2 className="teamdesc">
           Our Team
         </h2>
-        
+        <div className="team-grid">
         <div className = "team-members">
         <p>
           <h3>Lisa </h3> 
@@ -62,6 +62,8 @@ class About extends React.Component {
           <br />
         </p>
         </div>
+        </div>
+        
       </div>
     );
   }
